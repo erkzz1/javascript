@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style02.css">
+    <title>Meu primeiro programa em JS</title>
+    <script type="text/javascript" src="arquivo.js"></script>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem deserunt exercitationem harum minima nisi inventore eos voluptatibus magni odit, nobis, ex ut libero repellendus deleniti tempora molestiae, in temporibus. Eveniet.</p>
+
+
+    <script>
+       var número1 = Number(window.prompt('Digite um número: '));
+       /* Converção de String > Número. Número inteiro = Number.parseInt(n), Número real = Number.parseFloat(n), Number(n) = o JS decide se o valor é inteiro ou real  */
+       var número2 = Number(window.prompt('Digite outro número: '));
+       /* Converção de Número > String. String(n) ou n.toString() */
+       var soma = número1 + número2
+       window.alert(`A soma entre ${número1} e ${número2} é igual a ${soma} ` );
+       /* (number + number) para adição */
+       /* (string + string) para concatenação */
+    </script>
+</body>
+</html>
