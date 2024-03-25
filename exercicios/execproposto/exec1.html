@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var ano = Number(window.prompt('Ano atual (yyyy): '));
+    var nasc = Number(window.prompt('Digite seu ano de Nascimento'));
+    var carteira = ano - nasc
+        document.write(`idade: ${carteira} Anos! <br/>`);
+    carteira >= 18 ? document.write(`Apto a Carteira`):document.write(`Não apto!`); 
+</script>
+</html>

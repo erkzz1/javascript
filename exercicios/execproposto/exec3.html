@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        var a = Number(window.prompt('Quanto você ganha?'));
+        var sexo = String(window.prompt('Qual seu sexo M ou F?'));
+        var salario = a
+            document.write(`O seu sálario é ${salario} e o seu sexo é ${sexo} <br/>`);
+            salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        salario > 1500 && sexo !='M'? document.write(`Você pode receber o beneficio`):document.write(`você não pode receber o beneficio`);
+        
+    </script>
+</html>
