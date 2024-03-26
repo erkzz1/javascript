@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area{
+            font: normal 20pt Arial ;
+            background: rgb(1, 114, 1);
+            color: white;
+            width: 12.5rem;
+            height: 12.5rem;
+            line-height: 12.5rem;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="area"> 
+        interaja... 
+
+    </div>
+    <script>
+        var a = window.document.getElementById('area'); // objeto do lado de fora escopo global serve para todos, se estivesse dentro de 1 function só só serveria para ela
+
+        // presta atenção nos eventos dentro do JS para despoluir o código html
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar() {
+            a.innerText = 'Clicou!'
+            a.style.background = 'red' // quando o mouse entrar fica vermelho
+            
+        }
+        function entrar() {
+            a.innerText = 'Entrou!'
+
+        }
+        function sair() {
+            a.innerText = 'Saiu!'
+            a.style.background = 'green' // quando o mouse sair volta a ser verde
+        }
+
+    </script>
+</body>
+</html>
